@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "趣味测试",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "pink",
+    "borderStyle": "white",
+    "backgroundColor":"#fff",
+    "list": [
+      {
+        "selectedIconPath": "",
+        "iconPath": "",
+        "pagePath": "pages/index/index",
+        "text":"首页"
+      },
+      {
+        "selectedIconPath": "",
+        "iconPath": "",
+        "pagePath": "pages/ceshi/index",
+        "text":"桃花运"
+      }
+    ]
+  }
+}
