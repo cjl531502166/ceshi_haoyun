@@ -1,0 +1,20 @@
+/* components/navTop.wxss */
+
+.nav-top-box {
+  display: flex;
+  font-size: 16px;
+  border: 1px solid #ff7584;
+}
+
+.nav-item {
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  flex: 1;
+  
+}
+
+.active {
+  background: #ff7584;
+  color: #fff;
+}

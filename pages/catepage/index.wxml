@@ -1,0 +1,4 @@
+<!--pages/catepage/index.wxml-->
+<scroll-view scroll-y='auto'>
+  <tab-top tabText='{{tabText}}'></tab-top>
+</scroll-view>

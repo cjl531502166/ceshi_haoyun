@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/catepage/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,19 +13,19 @@
     "color": "#333333",
     "selectedColor": "pink",
     "borderStyle": "white",
-    "backgroundColor":"#fff",
+    "backgroundColor": "#fff",
     "list": [
       {
         "selectedIconPath": "",
         "iconPath": "",
         "pagePath": "pages/index/index",
-        "text":"首页"
+        "text": "首页"
       },
       {
         "selectedIconPath": "",
         "iconPath": "",
         "pagePath": "pages/ceshi/index",
-        "text":"桃花运"
+        "text": "桃花运"
       }
     ]
   }

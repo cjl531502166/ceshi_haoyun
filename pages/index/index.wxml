@@ -13,24 +13,11 @@
   </view>
   <view class="groom">快速查找</view>
   <view class="list-bg">
-    <view class="new-project" data-project="know-yourself">
-      <view class="bac0 bac">认识自我</view>
-    </view>
-    <view class="new-project" data-project="fun">
-      <view class="bac1 bac">第二人格</view>
-    </view>
-    <view class="new-project" data-project="future-plan">
-      <view class="bac2 bac">预测未来</view>
-    </view>
-    <view class="new-project" data-project="go-together">
-      <view class="bac3 bac">一起穿越</view>
-    </view>
-    <view class="new-project" data-project="emotional-teacher">
-      <view class="bac4 bac">情感大师</view>
-    </view>
-    <view class="new-project" data-project="total-test">
-      <view class="bac5 bac">全部测试</view>
-    </view>
+    <block wx:for='{{projectCategories}}' wx:key='{{*this}}'>
+      <view bindtap='navToCatePage' class="new-project" data-id='{{item.id}}' data-title='{{item.categorycn}}' data-project="{{item.categoryen}}">
+        <view class="bac{{index}} bac">{{item.categorycn}}</view>
+      </view>
+    </block>
     <view class="clear"></view>
   </view>
   <view class="test-title"></view>
@@ -43,7 +30,9 @@
         <view class="comeOn" style="color: #666666">354万人在玩</view>
         <view class="comeOn" style="color: #666666">谈恋爱前先做这个测试，保证爱情一路顺到底！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="like-animals">
@@ -54,7 +43,9 @@
         <view class="comeOn" style="color: #666666">37万人在玩</view>
         <view class="comeOn" style="color: #666666">选你最爱的动物看穿朋友对你的看法！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="future-resume">
@@ -66,7 +57,9 @@
         <view class="comeOn" style="color: #666666">52万人在玩</view>
         <view class="comeOn" style="color: #666666">快看，你最适合的工作就在这儿！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="lucky-spell">
@@ -78,7 +71,9 @@
         <view class="comeOn" style="color: #666666">89万人在玩</view>
         <view class="comeOn" style="color: #666666">此符在手，水逆不愁！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="lucky-secrets">
@@ -89,7 +84,9 @@
         <view class="comeOn" style="color: #666666">73万人在玩</view>
         <view class="comeOn" style="color: #666666">霉运退散，2018转运就靠它！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="good-person">
@@ -99,7 +96,9 @@
         <view class="comeOn" style="color: #666666">10万人在玩</view>
         <view class="comeOn" style="color: #666666">让人艳羡的好对象中你属于哪个级别？</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="money-cloud">
@@ -109,7 +108,9 @@
         <view class="comeOn" style="color: #666666">336万人在玩</view>
         <view class="comeOn" style="color: #666666">你的财富竟然超过了95%的人！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="this-is-me">
@@ -121,7 +122,9 @@
         <view class="comeOn" style="color: #666666">30万人在玩</view>
         <view class="comeOn" style="color: #666666">人前人后，快来get你的第二性格！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="mate-power">
@@ -131,7 +134,9 @@
         <view class="comeOn" style="color: #666666">24万人在玩</view>
         <view class="comeOn" style="color: #666666">听说你打败了全国95%的竞争者！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="peach-lot">
@@ -141,7 +146,9 @@
         <view class="comeOn" style="color: #666666">667万人在玩</view>
         <view class="comeOn" style="color: #666666">你近来桃花运可好？</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="what-you-live-on">
@@ -151,7 +158,9 @@
         <view class="comeOn" style="color: #666666">34万人在玩</view>
         <view class="comeOn" style="color: #666666">居然有人能靠颜值吃饭！？</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="horoscope-match">
@@ -161,7 +170,9 @@
         <view class="comeOn" style="color: #666666">350万人在玩</view>
         <view class="comeOn" style="color: #666666">这里有你们最舒服的相处方式！</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="annual-summary">
@@ -171,7 +182,9 @@
         <view class="comeOn" style="color: #666666">1.8亿人在玩</view>
         <view class="comeOn" style="color: #666666">你的年终总结完成了吗？</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="ren-sheng-cheng-ji">
@@ -181,7 +194,9 @@
         <view class="comeOn" style="color: #666666">3亿人在玩</view>
         <view class="comeOn" style="color: #666666">你这么优秀，你知道吗？</view>
       </view>
-      <view class="downR">去测</view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
       <view class="clear"></view>
     </view>
   </view>

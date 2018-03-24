@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tab-top": "../../components/tabComp/tabTop"
+  }
+}
