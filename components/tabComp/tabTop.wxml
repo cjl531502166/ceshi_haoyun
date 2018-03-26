@@ -1,5 +1,5 @@
 <!--components/navTop.wxml-->
 <view class='nav-top-box'>
-  <view bindtap='navigateTo' class='nav-item active' data-id='0'>{{tabText}}</view>
-  <view bindtap='navigateTo' class='nav-item' data-id='1'>首页</view>
+  <view class='nav-item active' data-id='0'>{{tabText}}</view>
+  <view bindtap='tapEvent' class='nav-item' data-id='1'>首页</view>
 </view>

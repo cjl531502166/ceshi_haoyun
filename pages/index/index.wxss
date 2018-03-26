@@ -209,65 +209,6 @@ image {
   background-size: 100%;
 }
 
-.show-list-class {
-  margin: 0 auto 2px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.list-banner-bg {
-  position: relative;
-  width: 98%;
-  margin: 1% auto;
-}
-
-.contentDown {
-  margin: 0 auto;
-  width: 100%;
-  padding: 3%;
-  box-sizing: border-box;
-  position: relative;
-  border-bottom: 1px solid #d2d2d2;
-}
-
-.downL {
-  width: 20%;
-  float: left;
-}
-
-.downC {
-  display: inline-block;
-  float: left;
-  margin: 0 5%;
-  width: 52%;
-}
-
-.ryq {
-  line-height: 28px;
-}
-
-.comeOn {
-  color: #9d3b3b;
-  font-size: 11px;
-}
-
-.downR {
-  float: left;
-  width: 11%;
-  padding: 1% 1% 1% 1%;
-  color: #f0627c;
-  border: 1px solid #f0627c;
-  border-radius: 4px;
-  font-size: 12px;
-  line-height: 15px;
-  margin-top: 7%;
-  display: flex;
-  align-items: center;
-}
-
-.clear {
-  clear: both;
-}
 
 .chooseCard {
   border: 1px solid #ff7584;

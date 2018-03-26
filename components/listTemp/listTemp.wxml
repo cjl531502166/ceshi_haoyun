@@ -1,0 +1,19 @@
+<!--components/listComp/listComp.wxml-->
+<template name='showList'>
+  <view class='show-list-class'>
+    <view class="groom">{{category}}</view>
+    <image wx:if='{{banner}}' mode='widthFix' class='list-banner-bg' src='{{banner}}'></image>
+    <view bindtap='goTesting' class="contentDown contentDown-bor" data-banner="banner" data-path="{{path}}" data-project="{{projecten}}">
+      <image class="downL" lazy-load="true" mode="widthFix" src="{{thumbimg}}"></image>
+      <view class="downC">
+        <view class="ryq">恋爱类型书</view>
+        <view class="comeOn" style="color: #666666">{{palyernum}}万人在玩</view>
+        <view class="comeOn" style="color: #666666">{{desc}}</view>
+      </view>
+      <view class="downR">去测
+        <rich-text nodes='&gt;'></rich-text>
+      </view>
+      <view class="clear"></view>
+    </view>
+  </view>
+</template>

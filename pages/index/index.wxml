@@ -64,8 +64,7 @@
     </view>
     <view class="contentDown contentDown-bor" data-banner="banner" data-path="path" data-project="lucky-spell">
       <image class="downL" lazy-load="" mode="widthFix" src="https://image.taotaoxi.cn/wechat-app/super-new/lucky-spell.png">
-
-      </image>
+</image>
       <view class="downC">
         <view class="ryq">水逆开运符</view>
         <view class="comeOn" style="color: #666666">89万人在玩</view>

@@ -21,12 +21,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    navigateTo(e) {
+    tapEvent(e) {
       let id = e.currentTarget.dataset.id;
       if (id == 1) {
-        wx.redirectTo({
-          url: '/pages/index/index'
-        });
+        wx.navigateBack({delta: 1});
       }
     }
   },
