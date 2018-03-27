@@ -1,4 +1,13 @@
 <!--pages/catepage/index.wxml-->
+<import src='../../components/listTemp/listTemp.wxml' />
 <scroll-view scroll-y='auto'>
   <tab-top tabText='{{tabText}}'></tab-top>
+  <view class='show-list-class' wx:for='{{testList}}' wx:key='{{index}}'>
+    <view class='list-banner-bg'>
+      <image src='{{item.banner}}' mode='widthFix'></image>
+    </view>
+    <block wx:for='{{item.lists}}' wx:key='{{index}}'>
+      <template is='testList' data='{{...item}}'></template>
+    </block>
+  </view>
 </scroll-view>

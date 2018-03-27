@@ -11,7 +11,9 @@
   width: 98%;
   margin: 1% auto;
 }
-
+.list-banner-bg image{
+  width: 100%;
+}
 .contentDown {
   margin: 0 auto;
   width: 100%;

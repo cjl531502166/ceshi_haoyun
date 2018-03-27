@@ -1,7 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/catepage/index"
+    "pages/catepage/index",
+    "pages/lovetype/test",
+    "pages/likeanimals/test",
+    "pages/futureresume/test",
+    "pages/ceshi/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,14 +20,14 @@
     "backgroundColor": "#fff",
     "list": [
       {
-        "selectedIconPath": "",
-        "iconPath": "",
+        "selectedIconPath": "images/icon/icon_home_1.png",
+        "iconPath": "images/icon/icon_home_0.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "selectedIconPath": "",
-        "iconPath": "",
+        "selectedIconPath": "images/icon/icon_user_1.png",
+        "iconPath": "images/icon/icon_user_0.png",
         "pagePath": "pages/ceshi/index",
         "text": "桃花运"
       }
