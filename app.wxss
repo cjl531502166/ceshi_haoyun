@@ -1,2 +1,5 @@
 /**app.wxss**/
 @import './components/listTemp/listTemp.wxss';
+page{
+  height: 100%;
+}
