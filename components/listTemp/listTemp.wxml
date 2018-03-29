@@ -7,8 +7,8 @@
       <view class="comeOn" style="color: #666666">{{palyernum}}人在玩</view>
       <view class="comeOn" style="color: #666666">{{desc}}</view>
     </view>
-    <view class="downR">去测
-      <rich-text nodes='&gt;'></rich-text>
+    <view class="downR">
+      <text decode='gt'>去测&gt;</text>
     </view>
     <view class="clear"></view>
   </view>

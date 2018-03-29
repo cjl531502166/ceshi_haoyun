@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/futureresume/test",
     "pages/index/index",
     "pages/catepage/index",
     "pages/lovetype/test",
     "pages/likeanimals/test",
-    "pages/futureresume/test",
     "pages/ceshi/index"
   ],
   "window": {
