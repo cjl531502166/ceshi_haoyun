@@ -1,14 +1,10 @@
-// components/nameTestComp/testComp.js
+// components/nameTestComp/testInexComp.js
 import testeeInfo from '../../models/testeeInfo.js';
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    testBg: {
-      type: String,
-      value: 'background:url(../../images/test_bg_1.png)'
-    },
     customInputStyle: {
       type: String,
       value: ''
@@ -35,12 +31,12 @@ Component({
    * 组件的初始数据
    */
   data: {
-    testBg: "",
     customInputStyle: "",
     title: "",
     sampleGraph: "",
     inputTips: "",
-    btnStyle: ""
+    btnStyle: "",
+    isNameEmpty: true
   },
   attached: function () {
     for (let x in this.properties) {
@@ -54,7 +50,23 @@ Component({
   methods: {
     bindNameInput(e) {
       let name = e.detail.value;
-      testeeInfo.name = name;
+      if (name) {
+        testeeInfo.name = name;
+        this.setData({
+          isNameEmpty: false
+        });
+      } else {
+        this.setData({
+          isNameEmpty: true
+        });
+      }
+    },
+    startTest() {
+      if (!this.data.isNameEmpty) {
+        wx.navigateTo({
+          url: '/pages/futureresumetest/test'
+        })
+      }
     }
   }
 })

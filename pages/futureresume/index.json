@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "test-index": "../../components/nameTestIndex/nameTestIndex"
+  },
+  "navigationBarTitleText": "未来履历"
+}

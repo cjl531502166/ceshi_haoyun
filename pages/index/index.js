@@ -108,7 +108,7 @@ Page({
         banner: '',//分类banner
         lists: [
           {
-            path: '/pages/lovetype/test',
+            path: '/pages/lovetype/index',
             thumbimg: '../../images/love-type.png',//拇指图,
             projectcn: '恋爱类型书',//项目名称中文
             projecten: 'love-type',//项目名称英文
@@ -117,7 +117,7 @@ Page({
             cid: '1',//所属分类id
             appid: ''//appid
           }, {
-            path: '/pages/likeanimals/test',
+            path: '/pages/likeanimals/index',
             thumbimg: '../../images/like-animals.png',//拇指图,
             projectcn: '朋友眼中的你',//项目名称中文
             projecten: 'like-animals',//项目名称英文
@@ -126,7 +126,7 @@ Page({
             cid: '2',//所属分类id
             appid: ''//appid
           }, {
-            path: '/pages/futureresume/test',
+            path: '/pages/futureresume/index',
             thumbimg: '../../images/future-resume.png',//拇指图,
             projectcn: '未来履历书',//项目名称中文
             projecten: 'future-resume',//项目名称英文

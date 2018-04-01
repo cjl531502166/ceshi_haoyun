@@ -1,4 +1,4 @@
-// pages/lovetype/test.js
+// pages/likeanimals/index.js
 Page({
 
   /**
