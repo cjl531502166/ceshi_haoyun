@@ -1,0 +1,27 @@
+<!--components/nameTestResult/nameTestResult.wxml-->
+<view>
+  <view class='result-title'>
+    <text></text>
+    <text></text>
+    <text></text>
+  </view>
+  <view>
+    <view class='result-module'>
+      <text class='center line'></text>
+      <text class='result-space'></text>
+    </view>
+    <view class='result-module'>
+      <text class='center work line'></text>
+      <text class='result-space'></text>
+    </view>
+    <view class='result-module'>
+      <text class='center work line'></text>
+      <image mode='widthFix' src=''></image>
+    </view>
+    <view class='result-module'>
+      <text class='module-title center line'></text>
+      <text class='center line'></text>
+      <text class='center text-size'></text>
+    </view>
+  </view>
+</view>

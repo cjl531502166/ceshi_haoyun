@@ -1,0 +1,2 @@
+/* components/nameTestResult/nameTestResult.wxss */
+@import '../nameTestIndex/nameTestIndex.wxss';

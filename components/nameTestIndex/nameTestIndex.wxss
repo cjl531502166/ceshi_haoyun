@@ -81,6 +81,7 @@ canvas {
 .topicList {
   margin: 0 auto;
   width: 96%;
+  overflow: hidden;
 }
 
 .topicList .wx-li {
@@ -88,6 +89,11 @@ canvas {
   border: 1px solid #00903b;
   padding: 20rpx 0;
   height: 240rpx;
+}
+
+.wx-li text {
+  font-size: 30rpx;
+  padding: 0 4rpx;
 }
 
 .nav_l {
@@ -122,10 +128,12 @@ canvas {
   line-height: 64rpx;
   overflow: hidden;
   border-radius: 40rpx;
+  display: flex;
+  justify-content: space-between;
 }
 
 .itemNum {
-  width: 9%;
+  width: 100%;
   color: #fff;
 }
 
@@ -138,7 +146,8 @@ canvas {
 }
 
 .topic-num-list {
-  width: 100%;
+  flex: 1;
+  overflow: hidden;
 }
 
 .topic-num-list .wx-li {

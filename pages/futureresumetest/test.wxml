@@ -18,7 +18,7 @@
     </view>
     <view class='topic-num-list-bg'>
       <view wx:for='{{testQuestions}}' wx:key='{{index}}' class='topic-num-list'>
-        <text class='bgLight lf center itemNum {{currentQid>=item.qid?questionAnsweredClass:""}}'>{{index>=10?testQuestions[index].qid:'0'+testQuestions[index].qid}}</text>
+        <text class='bgLight lf center itemNum {{currentQid>=item.qid?questionAnsweredClass:""}}'>{{index>=9?testQuestions[index].qid:'0'+testQuestions[index].qid}}</text>
       </view>
     </view>
   </view>
