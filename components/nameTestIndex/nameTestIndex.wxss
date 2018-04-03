@@ -90,12 +90,11 @@ canvas {
   padding: 20rpx 0;
   height: 240rpx;
 }
-
 .wx-li text {
-  font-size: 30rpx;
+  font-size: 28rpx;
   padding: 0 4rpx;
+  display: block;
 }
-
 .nav_l {
   background: #fff;
   color: #00903b;

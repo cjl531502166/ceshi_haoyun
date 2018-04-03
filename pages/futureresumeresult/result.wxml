@@ -1,0 +1,4 @@
+<!--pages/futureresumeresult/result.wxml-->
+<test-result name='{{name}}' resultData='{{resultData}}' canvasSize='{{canvasSize}}' canvasId='{{canvasId}}'>
+  <canvas canvas-id='futureCanvas' style="width:{{canvasSize.width}};height:{{canvasSize.height}};"></canvas>
+</test-result>

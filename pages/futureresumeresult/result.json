@@ -2,6 +2,6 @@
   "navigationBarTitleText": "未来履历",
   "component": true,
   "usingComponents": {
-    "test-index": "../../components/nameTestIndex/nameTestIndex"
+    "test-result": "../../components/nameTestResult/nameTestResult"
   }
 }

@@ -1,27 +1,32 @@
 <!--components/nameTestResult/nameTestResult.wxml-->
 <view>
   <view class='result-title'>
-    <text></text>
-    <text></text>
-    <text></text>
+    <text class='center'>{{name}}</text>
+    <text class='center'>最适合成为{{resultData.charactordesp}}的</text>
+    <text class='center'>{{resultData.job}}</text>
   </view>
   <view>
     <view class='result-module'>
-      <text class='center line'></text>
-      <text class='result-space'></text>
+      <text class='center line'>{{name}}基本性格</text>
+      <text class='result-space'>{{resultData.character}}</text>
     </view>
     <view class='result-module'>
-      <text class='center work line'></text>
-      <text class='result-space'></text>
+      <text class='center work line'>{{name}}工作特点</text>
+      <text class='result-space'>{{resultData.work}}</text>
     </view>
     <view class='result-module'>
-      <text class='center work line'></text>
-      <image mode='widthFix' src=''></image>
+      <text class='center work line'>适合{{name}}的工作</text>
+      <image class='result-img' mode='widthFix' src='{{resultData.jobtitles}}'></image>
     </view>
     <view class='result-module'>
-      <text class='module-title center line'></text>
-      <text class='center line'></text>
-      <text class='center text-size'></text>
+      <text class='module-title center line'>最适合{{name}}的工作是</text>
+      <text class='center line'>{{resultData.job}}</text>
+      <text class='center text-size'>我们为您生成一张名片</text>
+      <slot></slot>
+    </view>
+    <view class='btn-group'>
+      <button bindtap='saveHandle' class='save'></button>
+      <button open-type='share' class='share'></button>
     </view>
   </view>
 </view>
