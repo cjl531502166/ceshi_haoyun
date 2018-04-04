@@ -10,4 +10,5 @@
       <template is='testList' data='{{...item}}'></template>
     </block>
   </view>
+  <return-index bind:tapHandle='_returnIndex' imgSrc='../../images/returnIndex.png'></return-index>
 </scroll-view>

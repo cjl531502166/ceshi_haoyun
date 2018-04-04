@@ -13,8 +13,7 @@ Page({
   /**初始化 */
   _init() {
     this.setData({
-      // name: testeeInfo.name,
-      name: '哈哈',
+      name: testeeInfo.name ? testeeInfo.name : '',
       resultData: {
         "charactordesp": "自信友好",
         "job": "翻译外交家",
@@ -25,9 +24,6 @@ Page({
       canvasSize: {
         "width": wx.getSystemInfoSync().screenWidth * 0.9 + 'px',
         "height": "390rpx"
-      },
-      shareInfo: {
-        shareImg: ''
       }
     });
   },
@@ -45,8 +41,17 @@ Page({
     let ctx = wx.createCanvasContext('futureCanvas', this)
       , cardBg = '../../images/example.png'
       , sw = parseInt(this.data.canvasSize.width)
-      , sh = parseInt(this.data.canvasSize.height) * 0.5
+      , sh = parseInt(this.data.canvasSize.height) * 0.5;
+      console.log(sw,sh);
     ctx.drawImage(cardBg, 0, 0, sw, sh);
     ctx.draw();
   },
+  /**
+   * 返回首页
+   */
+  _returnIndex() {
+    wx.reLaunch({
+      url: '/pages/index/index'
+    });
+  }
 })

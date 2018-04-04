@@ -2,6 +2,10 @@
 import testeeInfo from '../../models/testeeInfo.js';
 Component({
   /**
+   * 组件外部样式
+   */
+  externalClasses: ['content-bg', 'input-class', 'title-class', 'btn-class'],
+  /**
    * 组件的属性列表
    */
   properties: {
@@ -31,42 +35,20 @@ Component({
    * 组件的初始数据
    */
   data: {
-    customInputStyle: "",
-    title: "",
-    sampleGraph: "",
-    inputTips: "",
-    btnStyle: "",
-    isNameEmpty: true
   },
   attached: function () {
-    for (let x in this.properties) {
-      this.properties.x && (this.data.x = this.properties.x);
-      this.setData(this.data);
-    };
+
   },
   /**
    * 组件的方法列表
    */
   methods: {
-    bindNameInput(e) {
+    _bindNameInput(e) {
       let name = e.detail.value;
-      if (name) {
-        testeeInfo.name = name;
-        this.setData({
-          isNameEmpty: false
-        });
-      } else {
-        this.setData({
-          isNameEmpty: true
-        });
-      }
+      testeeInfo.name = name ? name : null;
     },
-    startTest() {
-      if (!this.data.isNameEmpty) {
-        wx.navigateTo({
-          url: '/pages/futureresumetest/test'
-        })
-      }
+    _startTest() {
+      this.triggerEvent('_startTest', testeeInfo.name);
     }
   }
 })

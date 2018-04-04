@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "tab-top": "../../components/tabComp/tabTop"
+    "tab-top": "../../components/tabComp/tabTop",
+    "return-index": "../../components/returnIndex/returnIndex"
   }
 }

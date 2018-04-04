@@ -1,0 +1,8 @@
+/* components/returnIndex/returnIndex.wxss */
+.returnIndex {
+  width: 14%;
+  position: fixed;
+  bottom: 6%;
+  right: 4%;
+  z-index: 999;
+}

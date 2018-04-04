@@ -1,2 +1,3 @@
 <!--pages/lovetype/index.wxml-->
-
+<test-index bind:_startTest='_startTest' title-class='center my-title' input-class='center my-input' btn-class='center my-btn' content-bg='contentBg' title='{{title}}' sampleGraph='{{sampleGraph}}'>
+</test-index>

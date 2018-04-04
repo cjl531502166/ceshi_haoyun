@@ -1,2 +1,2 @@
 <!--pages/futureresume/index.wxml-->
-<test-index></test-index>
+<test-index bind:_startTest='_startTest' title-class='center my-title' input-class='center my-input' btn-class="center my-btn" content-bg='contentBg'></test-index>

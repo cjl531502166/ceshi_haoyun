@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "恋爱类型书",
+  "component": true,
+  "usingComponents": {
+    "test-index": "../../components/nameTestIndex/nameTestIndex"
+  }
+}

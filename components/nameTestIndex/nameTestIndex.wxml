@@ -1,8 +1,8 @@
 <!--components/nameTestComp/testInexComp.wxml-->
-<view class='contentBg'>
-  <text class='center title'>{{title}}</text>
+<view class="content-bg">
+  <text class='title-class'>{{title}}</text>
   <image class='sample-graph' mode='widthFix' src='{{sampleGraph}}'></image>
-  <input bindinput='bindNameInput' class='text-input center' placeholder='请输入姓名'></input>
+  <input bindinput='_bindNameInput' class='input-class' placeholder='请输入姓名'></input>
   <p class='hint-message center'>{{inputTips}}</p>
-  <view bindtap='startTest' class="{{isNameEmpty?'bg_before':'bg_after'}} star-btn center">开始测算</view>
+  <view bindtap='_startTest' class="btn-class">开始测算</view>
 </view>

@@ -1,5 +1,2 @@
 /**app.wxss**/
 @import './components/listTemp/listTemp.wxss';
-page{
-  min-height: 100%;
-}

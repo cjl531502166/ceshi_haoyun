@@ -1,15 +1,11 @@
-.contentBg {
+page {
   height: 100%;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAFRlDm/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzgyMUFCOUNBMjlEMTFFNzk0MUZCODJCM0ZENDgxRkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzgyMUFCOURBMjlEMTFFNzk0MUZCODJCM0ZENDgxRkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDODIxQUI5QUEyOUQxMUU3OTQxRkI4MkIzRkQ0ODFGQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDODIxQUI5QkEyOUQxMUU3OTQxRkI4MkIzRkQ0ODFGQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiM/VZcAAAAtSURBVHjaYtj94DFAADH8//8fIIBAGMgECCBGEJOBgYkBDAACDCoIIWFiYAAATrgY7yyFF5IAAAAASUVORK5CYII=);
 }
 
 .futureCanvas {
   margin: 3% auto;
 }
 
-canvas {
-  position: static;
-}
 
 .lf {
   float: left;
@@ -90,11 +86,13 @@ canvas {
   padding: 20rpx 0;
   height: 240rpx;
 }
+
 .wx-li text {
   font-size: 28rpx;
   padding: 0 4rpx;
   display: block;
 }
+
 .nav_l {
   background: #fff;
   color: #00903b;
@@ -279,3 +277,4 @@ canvas {
 .result-title p {
   padding: 10rpx 0;
 }
+

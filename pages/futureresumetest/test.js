@@ -107,7 +107,7 @@ Page({
   _updateView(currQuestion, id) {
     let that = this;
     that.setData({
-      currQuestion: currQuestion,
+      currQuestion: currQuestion ? currQuestion : '',
       currentQid: id
     });
     let timer = setTimeout(() => {
