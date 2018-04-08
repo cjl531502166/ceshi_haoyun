@@ -2,7 +2,7 @@
 <view>
   <view class='result-title'>
     <text class='center'>{{name}}</text>
-    <text class='center'>最适合成为{{resultData.charactordesp}}的</text>
+    <text class='center'>最适合成为自信友好的</text>
     <text class='center'>{{resultData.job}}</text>
   </view>
   <view>

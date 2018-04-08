@@ -1,2 +1,30 @@
 <!--pages/lovetypetest/test.wxml-->
-<text>pages/lovetypetest/test.wxml</text>
+<view class='treeBg'>
+  <view class='tree'>
+    <view class='refresh-bg'>
+      <view class='refresh'></view>
+    </view>
+    <text class="question-num center">{{currentQid>=10?currentQid:'0'+currentQid}}</text>
+    <view class='midQuestion'>
+      <text class="hint-message center questionTop">{{currQuestion.question}}</text>
+    </view>
+    <view class='topicList'>
+      <view bindtouchend='bindSelect' class='wx-li {{targetId==1?answerSelectClass:"nav_l"}} lf center' data-aa='1'>
+        <view class='center topic-select'>A</view>
+        <text>{{currQuestion.answer.A}}</text>
+      </view>
+      <view bindtouchend='bindSelect' class='wx-li {{targetId==2?answerSelectClass:"nav_l"}} lf center' data-aa='2'>
+        <view class='center topic-select'>B</view>
+        <text>{{currQuestion.answer.B}}</text>
+      </view>
+    </view>
+    <view class='listImage'>
+      <image mode='widthFix' src='../../images/number-top-line.png'></image>
+    </view>
+    <view class='topic-num-list-bg'>
+      <view wx:for='{{testQuestions}}' wx:key='{{index}}' class='topic-num-list'>
+        <text class='bgLight lf center itemNum {{currentQid>=item.qid?questionAnsweredClass:""}}'>{{index>=9?testQuestions[index].qid:'0'+testQuestions[index].qid}}</text>
+      </view>
+    </view>
+  </view>
+</view>

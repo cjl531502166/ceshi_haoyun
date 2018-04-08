@@ -1,0 +1,63 @@
+<!--components/dialogTypeTest/dialogTypeTest.wxml-->
+<view class='section'>
+  <scroll-view enable-back-to-top="true" scroll-y="auto" class="bg-view" scroll-top="99999999">
+    <div class="scroll-view">
+      <div style="overflow-x: hidden; overflow-y: auto;" class="scroll-view">
+        <div style="height: 100%;">
+          <view class="npc-say">
+            <image class="npc-img" mode="widthFix" src="https://image.taotaoxi.cn/wechat-app/flow/npcIcon.jpg" style="height: 39.1453px;">
+              <div style="background-image: url(&quot;https://image.taotaoxi.cn/wechat-app/flow/npcIcon.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;"></div>
+              <virtual></virtual>
+            </image>
+            <view class="npc-container">
+              <image class="show-img" data-share="undefined" mode="widthFix" src="https://image.taotaoxi.cn/wechat-app/like-animals/like-animalsBanner.png" style="height: 109.08px;">
+                <div style="background-image: url(&quot;https://image.taotaoxi.cn/wechat-app/like-animals/like-animalsBanner.png&quot;); background-size: 100% 100%; background-repeat: no-repeat;"></div>
+                <virtual></virtual>
+              </image>
+              <wx-text class="triangle">
+                <span style="display:none;"></span>
+                <span></span>
+              </wx-text>
+            </view>
+          </view>
+          <view class="npc-say">
+            <image class="npc-img" mode="widthFix" src="https://image.taotaoxi.cn/wechat-app/flow/npcIcon.jpg" style="height: 39.1453px;">
+              <div style="background-image: url(&quot;https://image.taotaoxi.cn/wechat-app/flow/npcIcon.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;"></div>
+              <virtual></virtual>
+            </image>
+            <view class="npc-container">
+              <wx-text class="">
+                <span style="display:none;">这个测试小桃分享给了五个朋友测，每个人都说爆准。一定要凭直觉选，不能思考太久，思考太久会变得不那么准确喔。</span>
+                <span>这个测试小桃分享给了五个朋友测，每个人都说爆准。一定要凭直觉选，不能思考太久，思考太久会变得不那么准确喔。</span>
+              </wx-text>
+              <wx-text class="triangle">
+                <span style="display:none;"></span>
+                <span></span>
+              </wx-text>
+            </view>
+          </view>
+          <view class="npc-say">
+            <image class="npc-img" mode="widthFix" src="https://image.taotaoxi.cn/wechat-app/flow/npcIcon.jpg" style="height: 39.1453px;">
+              <div style="background-image: url(&quot;https://image.taotaoxi.cn/wechat-app/flow/npcIcon.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;"></div>
+              <virtual></virtual>
+            </image>
+            <view class="npc-container">
+              <wx-text class="">
+                <span style="display:none;">请点击开始测算</span>
+                <span>请点击开始测算</span>
+              </wx-text>
+              <wx-text class="triangle">
+                <span style="display:none;"></span>
+                <span></span>
+              </wx-text>
+            </view>
+          </view>
+          <wx-button class="click-btn again" data-index="star" data-text="开始测算" style="width: 96%" type="primary">
+            开始测算
+          </wx-button>
+          <view class="height-bottom"></view>
+        </div>
+      </div>
+    </div>
+  </scroll-view>
+</view>

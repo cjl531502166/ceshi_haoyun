@@ -1,0 +1,63 @@
+<!--pages/lovetypetestresult/result.wxml-->
+<view>
+  <view class="result-title">
+    <text class="center twoHeart">{{name}}</text>
+    <text class="center midHigh">最适合的恋爱类型是</text>
+    <text class="center">灵性特质的{{resultData.job}}</text>
+  </view>
+  <view class="container">
+    <view class="result-module">
+      <text class="center line colorTitle twoHeart">{{name}}的类型</text>
+      <view class="result-scpae colorContent">{{resultData.character}}</view>
+    </view>
+    <view class="result-module">
+      <text class="center work line colorTitle twoHeart">{{name}}的恋爱说明</text>
+      <view class="result-scpae colorContent">{{resultData.type}}</view>
+    </view>
+    <view class="result-module">
+      <text class="center work line colorTitle twoHeart">适合{{name}}的恋爱类型</text>
+      <view class="allHeartType">
+        <view class="heartType">
+          <view>{{resultData.types[0]}}</view>
+        </view>
+        <view class="heartType">
+          <view>{{resultData.types[1]}}</view>
+
+        </view>
+        <view class="heartType">
+          <view>{{resultData.types[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="result-module">
+      <view class="center bestType">最适合名字的恋爱类型是
+        <text></text>
+      </view>
+      <view class="center colorTitle bestFont lineHigh">{{resultData.job}}</view>
+      <view class="innerMudule">
+        <text class="center colorTitle twoHeart highTop">恋爱类型说明</text>
+        <view class="result-scpae colorContent">{{resultData.lovetypedesp}}</view>
+      </view>
+      <view class="innerMudule">
+        <text class="center colorTitle twoHeart highTop">偶遇爱情的场所</text>
+        <view class="result-scpae colorContent center">{{resultData.situations}}</view>
+        <image mode="widthFix" src="{{resultData.situationsimg}}" style="margin-bottom: 30rpx; height: 170rpx;"></image>
+      </view>
+      <view class="innerMudule aleeve">
+        <text class="center lineHigh">约会锦囊</text>
+        <view class="outModule">
+          <view class="result-scpae center fourHeart">{{resultData.datingtips}}</view>
+        </view>
+      </view>
+      <view class="innerMudule">
+        <text class="center text-size colorTitle">我们为您生成一张恋爱证书</text>
+        <canvas canvas-id="futureCanvas" class="futureCanvas"></canvas>
+      </view>
+    </view>
+    <view class='btn-group'>
+      <button bindtap='saveHandle' class='save'></button>
+      <button open-type='share' class='share'></button>
+    </view>
+  </view>
+</view>
+<return-index bind:tapHandle='_returnIndex' imgSrc='../../images/returnIndex.png'></return-index>

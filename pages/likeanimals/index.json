@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "朋友眼中的你",
+  "component": true,
+  "usingComponents": {
+    "test-index": "../../components/dialogTypeTest/dialogTypeTest"
+  }
+}

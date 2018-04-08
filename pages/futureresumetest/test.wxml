@@ -4,7 +4,7 @@
     <view class='refresh-bg'>
       <view class='refresh'></view>
     </view>
-    <text class="question-num center">{{currQuestion.qid>=10?currQuestion.qid:'0'+currQuestion.qid}}</text>
+    <text class="question-num center">{{currentQid>=10?currentQid:'0'+currentQid}}</text>
     <text class="hint-message center questionTop">{{currQuestion.question}}</text>
     <view class='topicList'>
       <view bindtouchend='bindSelect' class='wx-li {{targetId==1?answerSelectClass:"nav_l"}} lf center' data-aa='1'>

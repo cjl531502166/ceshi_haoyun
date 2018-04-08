@@ -18,7 +18,7 @@ Page({
   _startTest(e) {
     if (e.detail) {
       wx.navigateTo({
-        url: '/pages/lovetype/test'
+        url: '/pages/lovetypetest/test'
       });
     }
   }

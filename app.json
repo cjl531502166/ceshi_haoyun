@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/likeanimals/index",
     "pages/index/index",
+    "pages/lovetypetestresult/result",
     "pages/futureresumeresult/result",
     "pages/futureresumetest/test",
     "pages/futureresume/index",
     "pages/catepage/index",
     "pages/lovetype/index",
     "pages/lovetypetest/test",
-    "pages/likeanimals/index",
     "pages/ceshi/index"
   ],
   "window": {
