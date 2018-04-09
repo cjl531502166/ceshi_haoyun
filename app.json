@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/likeanimals/index",
     "pages/index/index",
+    "pages/likeanimals/index",
     "pages/lovetypetestresult/result",
     "pages/futureresumeresult/result",
     "pages/futureresumetest/test",

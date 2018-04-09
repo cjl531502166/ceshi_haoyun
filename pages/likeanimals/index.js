@@ -1,66 +1,37 @@
 // pages/likeanimals/index.js
+const app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-  
+    npcAvatarurl: "",
+    dialogData: [],
+    userAvatarurl: '',
+    answerOptions: null,
+    showBtns: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  _init() {
+    let data = {
+      "npcAvatarurl": "https://image.taotaoxi.cn/wechat-app/flow/npcIcon.jpg",
+      "userAvatarurl": app.globalData.userInfo.avatarUrl,
+      "answerOptions": ['狗', '熊', '猴子', '狮子', '马', '松鼠', '羊', '兔子', '企鹅', '猫']
+    }
+    this.setData(data);
+  },
   onLoad: function (options) {
-  
+    this._init();
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  _sendMsgHandle(e) {
+    let optObj = {}
+      , dataSet = e.detail;
+    optObj.txt = dataSet.txt;
+    this.setData({
+      showBtns: true
+    })
   }
 })

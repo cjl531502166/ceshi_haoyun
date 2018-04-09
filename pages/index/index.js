@@ -36,6 +36,7 @@ Page({
     }
   },
   init() {
+    this.getUserInfo();
     let swiperConfig = {
       banner: [
         {
