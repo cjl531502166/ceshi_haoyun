@@ -4,25 +4,75 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    /**
+     * 对话数据
+     */
     dialogData: {
       type: null,
       value: ''
     },
+    /**
+     * 计算结果数据
+     */
+    resultData: {
+      type: null,
+      value: ''
+    },
+    /**
+     * 系统头像
+     */
     npcAvatarurl: {
       type: String,
       value: ''
     },
+    /**
+     * 用户头像
+     */
     userAvatarurl: {
       type: String,
       value: ''
     },
+    /**
+     * 键盘字母选项
+     */
     answerOptions: {
       type: null,
       value: ''
     },
+    /**
+     * 是否显示按钮键盘
+     */
     showBtns: {
       type: Boolean,
       value: false
+    },
+    /**
+     * 按钮索引数组
+     */
+    btnIndex: {
+      type: Array,
+      value: []
+    },
+    /**
+     * 按钮式否可点击
+     */
+    isClickable: {
+      type: Boolean,
+      value: true
+    },
+    /**
+     * 是否重玩
+     */
+    isPlayed: {
+      type: Boolean,
+      value: ''
+    },
+    /**
+     * 触底
+     */
+    toView: {
+      type: String,
+      value: ''
     }
   },
   /**
@@ -30,6 +80,7 @@ Component({
    */
   data: {
     initialData: [], //初始化数据
+    height: null
   },
   /**
    * 组件的方法列表
@@ -49,7 +100,8 @@ Component({
             showImg: '',
             txt: '请点击开始测算'
           }
-        ]
+        ],
+        height: `${wx.getSystemInfoSync().windowHeight}px`
       }
       this.setData(initData);
     },

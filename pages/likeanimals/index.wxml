@@ -1,2 +1,3 @@
 <!--pages/likeanimals/test.wxml-->
-<test-index bind:_sendMsg='_sendMsgHandle' answerOptions='{{answerOptions}}' npcAvatarurl='{{npcAvatarurl}}' dialogData='{{dialogData}}' showBtns='{{showBtns}}'></test-index>
+<test-index bind:_sendMsg='_sendMsgHandle' answerOptions='{{answerOptions}}' npcAvatarurl='{{npcAvatarurl}}' dialogData='{{dialogData}}' isClickable='{{isClickable}}' resultData='{{resultData}}' userAvatarurl='{{userAvatarurl}}' btnIndex='{{btnIndex}}'
+  showBtns='{{showBtns}}' isPlayed='{{isPlayed}}' toView='{{toView}}'></test-index>

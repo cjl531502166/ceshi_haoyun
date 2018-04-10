@@ -1,7 +1,7 @@
 <!--components/dialogTypeTest/dialogTypeTest.wxml-->
 <view class='section' style='background:#E2E6E9'>
-  <scroll-view enable-back-to-top="true" scroll-y="auto" class="bg-view" scroll-top="99999999">
-    <block wx:for='{{initialData}}' wx:key='{{index}}'>
+  <scroll-view style='height:{{height}}' scroll-into-view='{{toView}}' enable-back-to-top="true" scroll-y="true" class="bg-view" scroll-top="99999999">
+    <block wx:for='{{initialData}}' wx:key='{{*this}}'>
       <view class="npc-say">
         <image class="npc-img" mode="widthFix" src="{{npcAvatarurl}}"></image>
         <view class="npc-container">
@@ -11,10 +11,25 @@
         </view>
       </view>
     </block>
-    <block wx:for='{{dialogData}}' wx:key='{{index}}'>
-      <view class="npc-say {{index % 2==1?'':'npc-right'}}">
-        <image class="npc-img" mode="widthFix" src="{{userAvatarurl}}"></image>
+    <block wx:if='{{dialogData.length>0}}' wx:for='{{dialogData}}' wx:key='{{*this}}'>
+      <view class="npc-say {{item.id==1?'npc-say-right':''}}">
+        <image hidden='{{item.id==1}}' class="npc-img" mode="widthFix" src="{{npcAvatarurl}}"></image>
+        <view class="npc-container {{item.id==1?'npc-container-right':''}}">
+          <image wx:if='{{item.showImg}}' class="show-img" mode="widthFix" src="{{item.showImg}}"></image>
+          <text>{{item.txt}}</text>
+          <text hidden='{{item.id==1}}' class="triangle"></text>
+          <text hidden='{{item.id==0}}' class="triangle-right"></text>
+        </view>
+        <image hidden='{{item.id==0}}' class="npc-img" mode="widthFix" src="{{userAvatarurl}}"></image>
+      </view>
+    </block>
+    <block wx:if='{{resultData.length>0}}' wx:for='{{resultData}}' wx:key='{{*this}}'>
+      <view class="npc-say">
+        <image class="npc-img" mode="widthFix" src="{{npcAvatarurl}}"></image>
         <view class="npc-container">
+          <navigator wx:if='{{item.showImg}}' url='/pages/likeanimalsresult/result'>
+            <image class="show-img" mode="widthFix" src="{{item.showImg}}"></image>
+          </navigator>
           <text>{{item.txt}}</text>
           <text class="triangle"></text>
         </view>
@@ -22,10 +37,14 @@
     </block>
     <view wx:if='{{showBtns}}' class='select-btn'>
       <block wx:for='{{answerOptions}}' wx:key='{{index}}'>
-        <button bindtouchend='_sendMsg' class='click-btn {{index==0?"click-btn1":""}}' data-index='{{index}}' data-text='{{item}}' type='primary'>{{item}}</button>
+        <button wx:if='{{isClickable}}' bindtouchend='_sendMsg' class='click-btn {{index==0?"click-btn1":""}}' data-index='{{index}}' data-text='{{item}}' type='primary' disabled='{{btnIndex[index]==index?"disabled":""}}'>{{item}}</button>
+        <button wx:else class='click-btn {{index==0?"click-btn1":""}}' type='primary' disabled="disabled">{{item}}</button>
       </block>
     </view>
-    <button hidden='{{showBtns}}' bindtouchend='_sendMsg' class="click-btn again" data-index="start" data-text="开始测算" type="primary">开始测算</button>
-    <view class="height-bottom"></view>
+    <block wx:else>
+      <button hidden='{{!isPlayed}}' bindtouchend='_sendMsg' class="click-btn again" data-index="again" data-text="开始测算" type="primary">再测一次</button>
+      <button hidden='{{isPlayed}}' bindtouchend='_sendMsg' class="click-btn again" data-index="start" data-text="开始测算" type="primary">开始测算</button>
+    </block>
+    <view id='bottom_1' class="height-bottom"></view>
   </scroll-view>
 </view>

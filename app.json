@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/likeanimals/index",
+    "pages/likeanimalsresult/result",
     "pages/lovetypetestresult/result",
     "pages/futureresumeresult/result",
     "pages/futureresumetest/test",
