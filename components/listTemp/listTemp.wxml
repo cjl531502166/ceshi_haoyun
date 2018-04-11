@@ -1,15 +1,30 @@
 <!--components/listComp/listComp.wxml-->
 <template name='testList'>
-  <view bindtap='goTesting' class="contentDown contentDown-bor" data-banner="banner" data-path="{{path}}" data-project="{{projecten}}">
-    <image class="downL" mode='widthFix' lazy-load="true" src="{{thumbimg}}"></image>
-    <view class="downC">
-      <view class="ryq">{{projectcn}}</view>
-      <view class="comeOn" style="color: #666666">{{palyernum}}人在玩</view>
-      <view class="comeOn" style="color: #666666">{{desc}}</view>
-    </view>
-    <view class="downR">
-      <text decode='gt'>去测&gt;</text>
-    </view>
+  <view class="contentDown contentDown-bor">
+    <button wx:if='{{opentype=="contact"}}' class='form-btn' open-type='contact'>
+      <image class="downL" mode='widthFix' lazy-load="true" src="{{thumbimg}}"></image>
+      <view class="downC">
+        <view class="ryq">{{projectcn}}</view>
+        <view class="comeOn" style="color: #666666">{{palyernum}}人在玩</view>
+        <view class="comeOn" style="color: #666666">{{desc}}</view>
+      </view>
+      <view class="downR">
+        <text decode='gt'>去测&gt;</text>
+      </view>
+    </button>
+    <form wx:else bindsubmit='goTesting' report-submit='true' data-banner="banner" data-path="{{path}}" data-project="{{projecten}}">
+      <button class='form-btn' form-type='submit'>
+        <image class="downL" mode='widthFix' lazy-load="true" src="{{thumbimg}}"></image>
+        <view class="downC">
+          <view class="ryq">{{projectcn}}</view>
+          <view class="comeOn" style="color: #666666">{{palyernum}}人在玩</view>
+          <view class="comeOn" style="color: #666666">{{desc}}</view>
+        </view>
+        <view class="downR">
+          <text decode='gt'>去测&gt;</text>
+        </view>
+      </button>
+    </form>
     <view class="clear"></view>
   </view>
 </template>

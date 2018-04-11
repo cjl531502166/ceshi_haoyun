@@ -4,7 +4,14 @@
   <swiper indicator-dots='{{swiperConfig.indicatorDots}}' autoplay="{{swiperConfig.autoPlay}}" circular="{{swiperConfig.circular}}" class="swiper-box" duration="{{swiperConfig.duration}}" interval="{{swiperConfig.interval}}" current="" style='height:{{swiperConfig.height}}'
     bindchange='onSlideChange'>
     <swiper-item wx:for='{{swiperConfig.banner}}' wx:key='{{*this}}'>
-      <image mode='widthFix' data-banner="banner" data-id="" data-pro="" data-project="{{item.project}}" data-word="" lazy-load="" src="{{item.url}}"></image>
+      <button wx:if='{{item.opentype=="contact"}}' class='form-btn' open-type='contact'>
+        <image mode='widthFix' lazy-load="true" src="{{item.url}}"></image>
+      </button>
+      <form wx:else report-submit='true' bindsubmit='submitHandle' data-banner="banner" data-id="{{item.id}}" data-project="{{item.project}}" data-path="{{item.path}}">
+        <button class='form-btn' form-type='submit'>
+          <image mode='widthFix' lazy-load="true" src="{{item.url}}"></image>
+        </button>
+      </form>
     </swiper-item>
   </swiper>
   <view class="swipe-btn-wrapper">
@@ -15,9 +22,16 @@
   <view class="groom">快速查找</view>
   <view class="list-bg">
     <block wx:for='{{projectCategories}}' wx:key='{{*this}}'>
-      <view bindtap='navToCatePage' class="new-project" data-id='{{item.id}}' data-title='{{item.categorycn}}' data-project="{{item.categoryen}}">
-        <view class="bac{{index}} bac">{{item.categorycn}}</view>
+      <view wx:if='{{item.opentype=="contact"}}' class='new-project'>
+        <button class='form-btn' form-type='submit' open-type='contact'>
+          <view class="bac{{index}} bac">{{item.categorycn}}</view>
+        </button>
       </view>
+      <form wx:else bindsubmit='navToCatePage' class="new-project" data-id='{{item.id}}' data-title='{{item.categorycn}}' data-project="{{item.categoryen}}" report-submit='true'>
+        <button class='form-btn' form-type='submit'>
+          <view class="bac{{index}} bac">{{item.categorycn}}</view>
+        </button>
+      </form>
     </block>
     <view class="clear"></view>
   </view>

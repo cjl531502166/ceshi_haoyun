@@ -40,30 +40,57 @@ Page({
     let swiperConfig = {
       banner: [
         {
+          id: 1,
+          opentype: 'contact',
+          path: '',
           url: '../../images/banner_1.png',
           project: 'love-type'
         }, {
+          id: 1,
+          opentype: '',
+          path: '',
           url: '../../images/banner_2.png',
           project: 'love-type'
         }, {
+          id: 1,
+          path: '',
+          opentype: '',
           url: '../../images/banner_3.jpg',
           project: 'love-type'
         }, {
+          id: 1,
+          path: '',
+          opentype: '',
           url: '../../images/banner_4.png',
           project: 'love-type'
         }, {
+          id: 1,
+          path: '',
+          opentype: '',
           url: '../../images/banner_5.png',
           project: 'love-type'
         }, {
+          id: 1,
+          path: '',
+          opentype: '',
           url: '../../images/banner_6.png',
           project: 'love-type'
         }, {
+          id: 1,
+          path: '',
+          opentype: '',
           url: '../../images/banner_7.png',
           project: 'love-type'
         }, {
+          id: 1,
+          path: '',
+          opentype: '',
           url: '../../images/banner_8.png',
           project: 'love-type'
         }, {
+          id: 1,
+          path: '',
+          opentype: '',
           url: '../../images/banner_2.png',
           project: 'love-type'
         }
@@ -79,26 +106,32 @@ Page({
     let projectCategories = [
       {
         id: 1,
+        opentype: 'contact',
         categorycn: '认识自我',
         categoryen: 'know-yourself'
       }, {
         id: 2,
+        opentype: '',
         categorycn: '第二人格',
         categoryen: 'fun'
       }, {
         id: 3,
+        opentype: '',
         categorycn: '预测未来',
         categoryen: 'future-plan'
       }, {
         id: 4,
+        opentype: '',
         categorycn: '一起穿越',
         categoryen: 'fgo-together'
       }, {
         id: 5,
+        opentype: '',
         categorycn: '情感大师',
         categoryen: 'emotional-teacher'
       }, {
         id: 6,
+        opentype: '',
         categorycn: '全部测试',
         categoryen: 'total-test'
       }
@@ -116,7 +149,8 @@ Page({
             palyernum: 100,//玩家数
             desc: '谈恋爱先做这个测试，保证爱情一路顺到底',//描述
             cid: '1',//所属分类id
-            appid: ''//appid
+            appid: '',//appid
+            opentype: ''
           }, {
             path: '/pages/likeanimals/index',
             thumbimg: '../../images/like-animals.png',//拇指图,
@@ -125,7 +159,8 @@ Page({
             palyernum: 37,//玩家数
             desc: '选你最爱的动物看穿朋友对你的看法！',//描述
             cid: '2',//所属分类id
-            appid: ''//appid
+            appid: '',//appid
+            opentype: ''
           }, {
             path: '/pages/futureresume/index',
             thumbimg: '../../images/future-resume.png',//拇指图,
@@ -134,7 +169,8 @@ Page({
             palyernum: 185,//玩家数
             desc: '快看，你最适合的工作就在这儿！',//描述
             cid: '3',//所属分类id
-            appid: ''//appid
+            appid: '',//appid
+            opentype: 'contact'
           }
         ]
       }
@@ -168,6 +204,9 @@ Page({
     wx.navigateTo({
       url: '/pages/catepage/index'
     });
+  },
+  submitHandle(e) {
+    console.log(e);
   },
   // 进行测试
   goTesting(e) {

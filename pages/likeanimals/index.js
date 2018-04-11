@@ -55,6 +55,9 @@ Page({
       isClickable: true
     });
   },
+  onShow:function(){
+    this._toBottom();
+  },
   onLoad: function (options) {
     this._init();
   },
@@ -66,11 +69,11 @@ Page({
       , btnIndexRecordArr = this.data.btnIndex //记录已经点过过的按钮索引
       , optsDataArr = this.data.dialogData //问答数据
       , timer = null;
+    this._toBottom();
     if (timer) clearTimeout(timer);
     if (btnIndexRecordArr.indexOf(btnIndex) != -1) return false;
     obj_1 = { "id": 1, "txt": txt };
     optsDataArr.push(obj_1);
-    this._toBottom();
     this.setData({
       dialogData: optsDataArr
     });

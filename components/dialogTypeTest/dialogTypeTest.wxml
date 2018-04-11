@@ -35,16 +35,16 @@
         </view>
       </view>
     </block>
-    <view wx:if='{{showBtns}}' class='select-btn'>
-      <block wx:for='{{answerOptions}}' wx:key='{{index}}'>
-        <button wx:if='{{isClickable}}' bindtouchend='_sendMsg' class='click-btn {{index==0?"click-btn1":""}}' data-index='{{index}}' data-text='{{item}}' type='primary' disabled='{{btnIndex[index]==index?"disabled":""}}'>{{item}}</button>
-        <button wx:else class='click-btn {{index==0?"click-btn1":""}}' type='primary' disabled="disabled">{{item}}</button>
-      </block>
-    </view>
-    <block wx:else>
-      <button hidden='{{!isPlayed}}' bindtouchend='_sendMsg' class="click-btn again" data-index="again" data-text="开始测算" type="primary">再测一次</button>
-      <button hidden='{{isPlayed}}' bindtouchend='_sendMsg' class="click-btn again" data-index="start" data-text="开始测算" type="primary">开始测算</button>
-    </block>
     <view id='bottom_1' class="height-bottom"></view>
   </scroll-view>
+  <view wx:if='{{showBtns}}' class='select-btn'>
+    <block wx:for='{{answerOptions}}' wx:key='{{index}}'>
+      <button wx:if='{{isClickable}}' bindtouchend='_sendMsg' class='click-btn {{index==0?"click-btn1":""}}' data-index='{{index}}' data-text='{{item}}' type='primary' disabled='{{btnIndex[index]==index?"disabled":""}}'>{{item}}</button>
+      <button wx:else class='click-btn {{index==0?"click-btn1":""}}' type='primary' disabled="disabled">{{item}}</button>
+    </block>
+  </view>
+  <block wx:else>
+    <button hidden='{{!isPlayed}}' bindtouchend='_sendMsg' class="click-btn again" data-index="again" data-text="开始测算" type="primary">再测一次</button>
+    <button hidden='{{isPlayed}}' bindtouchend='_sendMsg' class="click-btn again" data-index="start" data-text="开始测算" type="primary">开始测算</button>
+  </block>
 </view>

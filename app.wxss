@@ -1,2 +1,17 @@
 /**app.wxss**/
 @import './components/listTemp/listTemp.wxss';
+
+.form-btn {
+  -moz-appearance: none;
+  -ms-progress-appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: normal;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+.form-btn::after {
+  border: none;
+}

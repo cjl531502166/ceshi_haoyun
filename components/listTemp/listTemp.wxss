@@ -35,7 +35,7 @@
 }
 
 .ryq {
-  line-height: 28px;
+  line-height: 56rpx;
 }
 
 .comeOn {
