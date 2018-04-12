@@ -1,2 +1,11 @@
 <!--pages/likeanimalsresult/result.wxml-->
-<text>朋友眼中的你</text>
+<view class='container log-list'>
+  <view class='topBg'>
+    <canvas canvas-id='{{canvasid}}' class='flow' style='width:{{canvasSize.width}};height:{{canvasSize.height}}'></canvas>
+  </view>
+</view>
+<view class='btn-group'>
+  <button bindtap='saveHandle' class='save'></button>
+  <button open-type='share' class='share'></button>
+</view>
+<return-index imgSrc='../../images/returnIndex.png'></return-index>

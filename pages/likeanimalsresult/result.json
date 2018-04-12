@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "朋友眼中的你"
+  "navigationBarTitleText": "朋友眼中的你",
+  "component": true,
+  "usingComponents": {
+    "return-index": "../../components/returnIndex/returnIndex"
+  }
 }

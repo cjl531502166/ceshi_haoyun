@@ -56,10 +56,8 @@ Page({
     });
   },
   onShow:function(){
-    this._toBottom();
-  },
-  onLoad: function (options) {
     this._init();
+    this._toBottom();
   },
   _sendMsgHandle(e) {
     let btnIndex = e.detail.index //按钮索引
