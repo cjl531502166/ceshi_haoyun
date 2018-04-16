@@ -8,7 +8,7 @@ Page({
   data: {
     canvasSize: {
       width: wx.getSystemInfoSync().windowWidth * 0.9,
-      height: "870rpx"
+      height: '870'
     },
     canvasid: 'canvas'
   },
@@ -17,7 +17,7 @@ Page({
    */
   onLoad: function (options) {
     drawCanvas.init({ canvasId: this.data.canvasid });
-    drawCanvas.darwCanvasBg(0, 0, this.data.canvasSize.width, this.data.canvasSize.height)
+    drawCanvas.darwCanvasBg(0, 0, this.data.canvasSize.width, 435);
   },
 
   onReady: function () {

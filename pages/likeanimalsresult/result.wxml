@@ -1,7 +1,7 @@
 <!--pages/likeanimalsresult/result.wxml-->
 <view class='container log-list'>
   <view class='topBg'>
-    <canvas canvas-id='{{canvasid}}' class='flow' style='width:{{canvasSize.width}};height:{{canvasSize.height}}'></canvas>
+    <canvas canvas-id='{{canvasid}}' class='flow' style='width:{{canvasSize.width}}px;height:{{canvasSize.height}}rpx'></canvas>
   </view>
 </view>
 <view class='btn-group'>
